@@ -6,9 +6,9 @@ int main()
 {
     string s;
     int max = 0;
-    char ret;
-    cin >> s;
+    char ret = 0;
     int arr[26] = {0};
+    cin >> s;
     for (auto &e : s)
     {
         arr[e - 'a']++;
