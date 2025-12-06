@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+    int sum = 0;
+    for (int i = 1; i <= 2020; i++)
+    {
+        int a = i;
+        while (a)
+        {
+            a /= 10;
+            sum++;
+        }
+    }
+    printf("%d", sum);
+    
+    return 0;
+}
